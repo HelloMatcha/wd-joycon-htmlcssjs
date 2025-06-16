@@ -3,28 +3,20 @@ function show(text) {
     document.getElementById('display').innerText = text;
 }
 
-// Button Click
-document.querySelectorAll('.btn').forEach(button => {
-    button.addEventListener('click', () => {
-      const key = button.getAttribute('data-key');
-      show(key);
-    });
-});
-
 // Keyboard Input
 document.addEventListener('keydown', function(e) {
     switch (e.key) {
       case 'ArrowUp':
-        show('up');
+        show('Up');
         break;
       case 'ArrowDown':
-        show('down');
+        show('Down');
         break;
       case 'ArrowLeft':
-        show('left');
+        show('Left');
         break;
       case 'ArrowRight':
-        show('right');
+        show('Right');
         break;
       case 'a':
       case 'A':
