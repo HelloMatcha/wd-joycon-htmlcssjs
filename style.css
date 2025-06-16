@@ -1,0 +1,132 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color:#000B20;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.screen {
+    padding: 20px 40px;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    min-width: 160px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.436);
+    color: white;
+}
+  
+.controller {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+  
+.left-pad, .right-pad {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.left-pad {
+    gap: 10px;
+    width: 200px;
+    position: relative;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.436);
+    color: white;
+}
+  
+.dpad {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+  
+.dpad .btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    border: 1px solid #333;
+    background: #eee;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 40px;
+}
+  
+.dpad .btn:hover {
+    background: #ccc;
+}
+
+.dpad .btn:active {
+    background: #adadad;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+  
+.right-pad {
+    background: #fff;
+    flex-direction: row;
+    gap: 20px;
+    width: 180px;
+    justify-content: center;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.436);
+    color: white;
+}
+  
+.action-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background: pink;
+    font-weight: bold;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+  
+.action-btn:hover {
+    background: #f8a8b0;
+}
+
+.action-btn:active {
+    background: #ff98a3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+  
+.info {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: right;
+    width: 100%;
+    max-width: 500px;
+}
+  
+.info a {
+    color: #ffffff;
+}
